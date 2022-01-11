@@ -7,8 +7,6 @@ describe('Dashboard', () => {
 		// Since we want to visit the same URL at the start of all our tests,
 		// we include it in our beforeEach function so that it runs before each test
 		cy.visit(' http://localhost:4200/');
-
-		cy.intercept('GET','api/heroes', {fixture: 'heroes.json'});
 	});
 
     it('Displays Top Heroes heading', () =>{
