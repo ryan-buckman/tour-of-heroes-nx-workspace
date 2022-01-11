@@ -1,3 +1,3 @@
-# angular-swtrjd
+# Tour of Heroes Tests
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-swtrjd)
+The angular Tour of Heroes tutorial app with cypress e2e tests
