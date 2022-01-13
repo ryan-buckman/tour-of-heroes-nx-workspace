@@ -5,11 +5,11 @@ describe('Dashboard', () => {
 		page.Open();
 	});
 
-    it('Displays Top Heroes heading', () =>{
+    it('Should display the dashboard heading', () =>{
         cy.get('[data-cy=dashboard-heading]').should('have.text', 'Top Heroes');
     });
 
-	it('Displays the heroes menu', () =>{
+	it('Should display the heroes menu', () =>{
 		cy.get('.heroes-menu > a').then(($links) =>{
 			expect($links).to.have.length(4);
 			expect($links[0]).to.contain.text('Narco').and.contain.attr('href');

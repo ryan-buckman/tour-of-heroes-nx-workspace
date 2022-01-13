@@ -10,12 +10,12 @@ describe('Hero Search', () => {
     });
 
     describe('Search Results', () =>{
-        it('Should display the searched hero in the search results, if hero found', () => {   
+        it('Should display the searched hero in the search results, if a hero was found', () => {   
             cy.get('input[id="search-box"]').type('Narco');
             cy.get('ul.search-result li > a').first().should('have.text', ' Narco ');
         });
     
-        it('Should not display a hero in the search results, if no hero found', () =>{
+        it('Should not display a hero in the search results, if no hero was found', () =>{
             cy.get('ul.search-result').children().should('have.length', 0);
         });
     });

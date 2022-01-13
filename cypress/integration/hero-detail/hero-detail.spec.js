@@ -10,22 +10,24 @@ describe('Hero Detail', () => {
 		page.Open();
 	});
 
-    it('Displays the correct hero name heading', () =>{       		
+    it('Should display the hero name heading', () =>{       		
         cy.get('[data-cy=hero-heading]').should('have.text', `${expectedHeroResponse.name.toLocaleUpperCase()} Details`);	
     });
 
-    it('Displays the correct hero id', () =>{		
+    it('Should display the hero id', () =>{		
         cy.get('[data-cy=hero-id]').should('have.text', `id: ${expectedHeroResponse.id}`);	
     });
 
-    it('Input should contain the hero name value',()=>{		
-        cy.get('input[id="hero-name"]').should('have.value', `${expectedHeroResponse.name}`);	
-    });
+    describe('Hero name input',() =>{
+        it('Should contain the hero name value',()=>{		
+            cy.get('input[id="hero-name"]').should('have.value', `${expectedHeroResponse.name}`);	
+        });
 
-    it('Input should update the hero name heading',()=>{		
-        const expectedInput = 'foo bar';
-        cy.get('input[id="hero-name"]').clear().type(expectedInput);
-        cy.get('[data-cy=hero-heading]').should('have.text', `${expectedInput.toLocaleUpperCase()} Details`);	
+        it('Should update the hero name heading',()=>{		
+            const expectedInput = 'foo bar';
+            cy.get('input[id="hero-name"]').clear().type(expectedInput);
+            cy.get('[data-cy=hero-heading]').should('have.text', `${expectedInput.toLocaleUpperCase()} Details`);	
+        });
     });
 
     const page = {
