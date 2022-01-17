@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Hero } from '../hero';
+import { Hero } from '../../../../../libs/data/src/lib/data';
 import { HeroService } from '../hero.service';
 
 @Component({
