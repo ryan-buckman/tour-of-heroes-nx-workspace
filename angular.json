@@ -165,6 +165,34 @@
         }
       }
     },
+    "tour-of-heroes-e2e": {
+      "root": "apps/tour-of-heroes-e2e",
+      "sourceRoot": "apps/tour-of-heroes-e2e/src",
+      "projectType": "application",
+      "architect": {
+        "e2e": {
+          "builder": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/tour-of-heroes-e2e/cypress.json",
+            "devServerTarget": "tour-of-heroes:serve:development"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "tour-of-heroes:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["apps/tour-of-heroes-e2e/**/*.{js,ts}"]
+          }
+        }
+      },
+      "tags": [],
+      "implicitDependencies": ["tour-of-heroes"]
+    },
     "ui": {
       "projectType": "library",
       "root": "libs/ui",

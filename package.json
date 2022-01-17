@@ -68,6 +68,7 @@
     "cypress": "^9.2.1",
     "eslint": "8.2.0",
     "eslint-config-prettier": "8.1.0",
+    "eslint-plugin-cypress": "^2.10.3",
     "jasmine-core": "~3.10.0",
     "jasmine-marbles": "~0.8.3",
     "jasmine-spec-reporter": "~7.0.0",
