@@ -1,7 +1,7 @@
-# Tour of Heroes - e2e tests
+# Tour of Heroes - Micro frontends
 
-The angular tour of heroes tutorial app with cypress e2e tests. It can be used to learn how to start testing angular with Cypress.
+A micro front end approach to the tour of heroes sample app.
 
-#### Running the tests
-1. `npm install`
-2. ``npx cypress open``
+#### Setup
+
+//TODO: Add setup steps
