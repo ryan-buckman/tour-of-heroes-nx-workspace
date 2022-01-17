@@ -1,10 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-
-import { Hero } from '../../../../../libs/data/src/lib/data';
-import { HeroService } from '../hero.service';
+import { Hero } from '@tour-of-heroes/data';
+import { HeroService } from '@tour-of-heroes/hero-service';
 
 @Component({
-  selector: 'app-heroes',
+  selector: 'tour-of-heroes-heroes',
   templateUrl: './heroes.component.html',
   styleUrls: ['./heroes.component.css']
 })

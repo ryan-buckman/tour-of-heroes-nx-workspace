@@ -1,14 +1,13 @@
-import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
 
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { catchError, map, tap } from 'rxjs/operators';
-
 import { Hero } from '../../../../libs/data/src/lib/data';
-import { MessageService } from './message.service';
+import { MessageService } from '@tour-of-heroes/message-service';
+import { Injectable } from '@angular/core';
 
 
-@Injectable({ providedIn: 'root' })
+@Injectable()
 export class HeroService {
 
   private heroesUrl = 'api/heroes';  // URL to web api

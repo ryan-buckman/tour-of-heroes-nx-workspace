@@ -1,18 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-
-import { Observable, Subject } from 'rxjs';
-
-import {
-   debounceTime, distinctUntilChanged, switchMap
- } from 'rxjs/operators';
-
- import { Hero } from '../../../../../libs/data/src/lib/data';
- import { HeroService } from '../hero.service';
+import { Hero } from '@tour-of-heroes/data';
+import { HeroService } from '@tour-of-heroes/hero-service';
+import { Observable, Subject, debounceTime, distinctUntilChanged, switchMap } from 'rxjs';
 
 @Component({
-  selector: 'app-hero-search',
+  selector: 'tour-of-heroes-hero-search',
   templateUrl: './hero-search.component.html',
-  styleUrls: [ './hero-search.component.css' ]
+  styleUrls: ['./hero-search.component.css']
 })
 export class HeroSearchComponent implements OnInit {
   heroes$!: Observable<Hero[]>;

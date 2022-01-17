@@ -1,1 +1,15 @@
-<p>dashboard works!</p>
+<h2 data-cy="dashboard-heading">Top Heroes</h2>
+<div class="heroes-menu">
+  <a *ngFor="let hero of heroes" routerLink="/detail/{{hero.id}}">
+      {{hero.name}}
+  </a>
+</div>
+
+<tour-of-heroes-hero-search></tour-of-heroes-hero-search>
+
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->

@@ -20,6 +20,8 @@
     "lib": ["es2020", "dom"],
     "paths": {
       "@tour-of-heroes/data": ["libs/data/src/index.ts"],
+      "@tour-of-heroes/hero-service": ["libs/hero-service/src/index.ts"],
+      "@tour-of-heroes/message-service": ["libs/message-service/src/index.ts"],
       "@tour-of-heroes/ui": ["libs/ui/src/index.ts"]
     },
     "rootDir": "."

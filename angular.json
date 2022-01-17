@@ -25,6 +25,52 @@
       },
       "tags": []
     },
+    "hero-service": {
+      "root": "libs/hero-service",
+      "sourceRoot": "libs/hero-service/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["libs/hero-service/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/hero-service"],
+          "options": {
+            "jestConfig": "libs/hero-service/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": []
+    },
+    "message-service": {
+      "root": "libs/message-service",
+      "sourceRoot": "libs/message-service/src",
+      "projectType": "library",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["libs/message-service/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/message-service"],
+          "options": {
+            "jestConfig": "libs/message-service/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "tags": []
+    },
     "tour-of-heroes": {
       "projectType": "application",
       "schematics": {

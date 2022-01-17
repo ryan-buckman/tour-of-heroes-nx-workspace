@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { MessageService } from '../message.service';
+import { MessageService } from '@tour-of-heroes/message-service';
 
 @Component({
-  selector: 'app-messages',
+  selector: 'tour-of-heroes-messages',
   templateUrl: './messages.component.html',
   styleUrls: ['./messages.component.css']
 })
@@ -12,7 +12,6 @@ export class MessagesComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }
 
 
