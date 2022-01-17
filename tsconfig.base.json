@@ -17,11 +17,11 @@
     "importHelpers": true,
     "target": "es2017",
     "module": "es2020",
-    "lib": [
-      "es2020",
-      "dom"
-    ],
-    "paths": {},
+    "lib": ["es2020", "dom"],
+    "paths": {
+      "@tour-of-heroes/data": ["libs/data/src/index.ts"],
+      "@tour-of-heroes/ui": ["libs/ui/src/index.ts"]
+    },
     "rootDir": "."
   },
   "angularCompilerOptions": {
