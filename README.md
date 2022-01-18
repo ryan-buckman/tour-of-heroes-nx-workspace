@@ -1,6 +1,6 @@
 # Tour of Heroes - Nx workspace
 
-Exploring a Nx workspace approach to the tour of heroes sample app using [Nx](https://nx.dev/) to transform it from an Angular CLI workspace to an Nx workspace.
+Exploring a Nx workspace approach to the tour of heroes sample app using [Nx](https://nx.dev/) to transform it from an Angular CLI workspace to an Nx workspace. Nx adds more schematics to the Angular CLI and helps you generate in-app libraries where you can implement shared code.
 
 ## Setup
 
